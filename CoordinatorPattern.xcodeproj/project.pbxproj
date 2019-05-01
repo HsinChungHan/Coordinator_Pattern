@@ -18,6 +18,8 @@
 		D1BE926822798F070058FD50 /* KanjiDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BE926722798F070058FD50 /* KanjiDetailViewController.swift */; };
 		D1BE926A22798F880058FD50 /* WordExampleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BE926922798F880058FD50 /* WordExampleCell.swift */; };
 		D1BE926C227990FC0058FD50 /* KanjiDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BE926B227990FB0058FD50 /* KanjiDetailCell.swift */; };
+		D1BE92722279A65F0058FD50 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BE92712279A65F0058FD50 /* Coordinator.swift */; };
+		D1BE92752279A7490058FD50 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BE92742279A7490058FD50 /* ApplicationCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		D1BE926722798F070058FD50 /* KanjiDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanjiDetailViewController.swift; sourceTree = "<group>"; };
 		D1BE926922798F880058FD50 /* WordExampleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordExampleCell.swift; sourceTree = "<group>"; };
 		D1BE926B227990FB0058FD50 /* KanjiDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanjiDetailCell.swift; sourceTree = "<group>"; };
+		D1BE92712279A65F0058FD50 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		D1BE92742279A7490058FD50 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,7 @@
 				D1BE9246227974170058FD50 /* Assets.xcassets */,
 				D1BE9248227974170058FD50 /* LaunchScreen.storyboard */,
 				D1BE924B227974170058FD50 /* Info.plist */,
+				D1BE92732279A72B0058FD50 /* Coordinator */,
 			);
 			path = CoordinatorPattern;
 			sourceTree = "<group>";
@@ -112,6 +117,15 @@
 				D1BE926922798F880058FD50 /* WordExampleCell.swift */,
 			);
 			path = KanjiDetail;
+			sourceTree = "<group>";
+		};
+		D1BE92732279A72B0058FD50 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				D1BE92712279A65F0058FD50 /* Coordinator.swift */,
+				D1BE92742279A7490058FD50 /* ApplicationCoordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,9 +204,11 @@
 				D1BE92642279885F0058FD50 /* KanjiListViewController.swift in Sources */,
 				D1BE926822798F070058FD50 /* KanjiDetailViewController.swift in Sources */,
 				D1BE9240227974160058FD50 /* AppDelegate.swift in Sources */,
+				D1BE92752279A7490058FD50 /* ApplicationCoordinator.swift in Sources */,
 				D1BE925C227981450058FD50 /* KanjiStorage.swift in Sources */,
 				D1BE926622798E3A0058FD50 /* UIVIew_Extension.swift in Sources */,
 				D1BE9260227981DC0058FD50 /* Kanji.swift in Sources */,
+				D1BE92722279A65F0058FD50 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

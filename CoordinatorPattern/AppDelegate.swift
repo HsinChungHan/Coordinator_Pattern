@@ -13,12 +13,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    fileprivate var applicationCoordinator: ApplicationCoordinator?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        window = UIWindow()
-        let naviVC = UINavigationController.init(rootViewController: KanjiListViewController())
-        window?.rootViewController = naviVC
-        window?.makeKeyAndVisible()
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        let applicationCoordinator = ApplicationCoordinator.init(window: window)
+        
+        self.window = window
+        self.applicationCoordinator = applicationCoordinator
+        applicationCoordinator.start()
+        
         return true
     }
 }
