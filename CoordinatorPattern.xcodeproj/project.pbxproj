@@ -80,10 +80,10 @@
 				D1BE927022799A650058FD50 /* KanjiDetail */,
 				D1BE9261227988180058FD50 /* Model */,
 				D1BE9262227988210058FD50 /* Resource */,
+				D1BE92732279A72B0058FD50 /* Coordinator */,
 				D1BE9246227974170058FD50 /* Assets.xcassets */,
 				D1BE9248227974170058FD50 /* LaunchScreen.storyboard */,
 				D1BE924B227974170058FD50 /* Info.plist */,
-				D1BE92732279A72B0058FD50 /* Coordinator */,
 			);
 			path = CoordinatorPattern;
 			sourceTree = "<group>";
@@ -117,8 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				D1BE926722798F070058FD50 /* KanjiDetailViewController.swift */,
-				D1BE926B227990FB0058FD50 /* KanjiDetailCell.swift */,
-				D1BE926922798F880058FD50 /* WordExampleCell.swift */,
+				D1BE927A2279D3210058FD50 /* Cell */,
 			);
 			path = KanjiDetail;
 			sourceTree = "<group>";
@@ -132,6 +131,15 @@
 				D1BE92782279BCAD0058FD50 /* KanjiDetailCoordinator.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		D1BE927A2279D3210058FD50 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D1BE926B227990FB0058FD50 /* KanjiDetailCell.swift */,
+				D1BE926922798F880058FD50 /* WordExampleCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
