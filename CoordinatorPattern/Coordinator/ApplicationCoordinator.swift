@@ -13,22 +13,14 @@ class ApplicationCoordinator: Coordinator {
     let kanjiStorage: KanjiStorage
     let window: UIWindow
     let rootViewController: UINavigationController
-    let kanjiListCoordinator: KanjiListControllerCoordinator
+    let kanjiListCoordinator: AllKanjiListCoordinator
     
     init(window: UIWindow){
         self.window = window
         kanjiStorage = KanjiStorage()
         rootViewController = UINavigationController()
         rootViewController.navigationBar.prefersLargeTitles = true
-        kanjiListCoordinator = KanjiListControllerCoordinator.init(presenter: rootViewController, kanjiStorage: kanjiStorage)
-        
-        
-        //Testing Code
-        /*
-        let emptyViewController = UIViewController()
-        emptyViewController.view.backgroundColor = #colorLiteral(red: 0.1019607857, green: 0.2784313858, blue: 0.400000006, alpha: 1)
-        rootViewController.pushViewController(emptyViewController, animated: true)
-        */
+        kanjiListCoordinator = AllKanjiListCoordinator.init(presenter: rootViewController, kanjiStorage: kanjiStorage)
     }
     
     func start() {
@@ -36,6 +28,4 @@ class ApplicationCoordinator: Coordinator {
         kanjiListCoordinator.start()
         window.makeKeyAndVisible()
     }
-    
-    
 }

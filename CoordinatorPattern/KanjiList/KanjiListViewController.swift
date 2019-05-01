@@ -7,10 +7,16 @@
 //
 
 import UIKit
+protocol KanjiListViewControllerDelegate: class {
+    func kanjiListViewControllerDidSelectKanji(_ selectedKanji: Kanji)
+}
+
 
 class KanjiListViewController: UIViewController {
+    weak var delegate: KanjiListViewControllerDelegate?
+    
     lazy var tableView: UITableView = {
-       let tv = UITableView()
+        let tv = UITableView()
         tv.delegate = self
         tv.dataSource = self
         return tv
@@ -38,7 +44,7 @@ class KanjiListViewController: UIViewController {
         super.viewDidLoad()
         setupLayout()
     }
-
+    
 }
 
 extension KanjiListViewController{
@@ -73,12 +79,18 @@ extension KanjiListViewController: UITableViewDelegate, UITableViewDataSource{
         //讓使用者ㄖ進入detailVC時，只能再查找一次，不要讓使用者無限查找
         guard shouldOpenDetailsOnCellSelection == true else{return}
         let kanji = kanjiList[indexPath.row]
+        delegate?.kanjiListViewControllerDidSelectKanji(kanji)
+        tableView.deselectRow(at: indexPath, animated: true)
+         /*
         defer{
             tableView.deselectRow(at: indexPath, animated: true)
         }
-        let kanjiDetailVC = KanjiDetailViewController()
-        kanjiDetailVC.selectedKanji = kanji
-        navigationController?.pushViewController(kanjiDetailVC, animated: true)
+       
+         let kanjiDetailVC = KanjiDetailViewController()
+         kanjiDetailVC.selectedKanji = kanji
+         navigationController?.pushViewController(kanjiDetailVC, animated: true)
+         */
+        
     }
     
     

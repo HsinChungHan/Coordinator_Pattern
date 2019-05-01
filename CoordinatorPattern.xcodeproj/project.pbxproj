@@ -20,7 +20,8 @@
 		D1BE926C227990FC0058FD50 /* KanjiDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BE926B227990FB0058FD50 /* KanjiDetailCell.swift */; };
 		D1BE92722279A65F0058FD50 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BE92712279A65F0058FD50 /* Coordinator.swift */; };
 		D1BE92752279A7490058FD50 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BE92742279A7490058FD50 /* ApplicationCoordinator.swift */; };
-		D1BE92772279B7190058FD50 /* KanjiListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BE92762279B7190058FD50 /* KanjiListCoordinator.swift */; };
+		D1BE92772279B7190058FD50 /* AllKanjiListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BE92762279B7190058FD50 /* AllKanjiListCoordinator.swift */; };
+		D1BE92792279BCAD0058FD50 /* KanjiDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BE92782279BCAD0058FD50 /* KanjiDetailCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,7 +40,8 @@
 		D1BE926B227990FB0058FD50 /* KanjiDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanjiDetailCell.swift; sourceTree = "<group>"; };
 		D1BE92712279A65F0058FD50 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		D1BE92742279A7490058FD50 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
-		D1BE92762279B7190058FD50 /* KanjiListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanjiListCoordinator.swift; sourceTree = "<group>"; };
+		D1BE92762279B7190058FD50 /* AllKanjiListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllKanjiListCoordinator.swift; sourceTree = "<group>"; };
+		D1BE92782279BCAD0058FD50 /* KanjiDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanjiDetailCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,7 +128,8 @@
 			children = (
 				D1BE92712279A65F0058FD50 /* Coordinator.swift */,
 				D1BE92742279A7490058FD50 /* ApplicationCoordinator.swift */,
-				D1BE92762279B7190058FD50 /* KanjiListCoordinator.swift */,
+				D1BE92762279B7190058FD50 /* AllKanjiListCoordinator.swift */,
+				D1BE92782279BCAD0058FD50 /* KanjiDetailCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -209,10 +212,11 @@
 				D1BE9240227974160058FD50 /* AppDelegate.swift in Sources */,
 				D1BE92752279A7490058FD50 /* ApplicationCoordinator.swift in Sources */,
 				D1BE925C227981450058FD50 /* KanjiStorage.swift in Sources */,
+				D1BE92792279BCAD0058FD50 /* KanjiDetailCoordinator.swift in Sources */,
 				D1BE926622798E3A0058FD50 /* UIVIew_Extension.swift in Sources */,
 				D1BE9260227981DC0058FD50 /* Kanji.swift in Sources */,
 				D1BE92722279A65F0058FD50 /* Coordinator.swift in Sources */,
-				D1BE92772279B7190058FD50 /* KanjiListCoordinator.swift in Sources */,
+				D1BE92772279B7190058FD50 /* AllKanjiListCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

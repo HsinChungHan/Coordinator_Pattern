@@ -12,8 +12,13 @@ enum DetailViewCellId: String{
     case KanjiDetailCellId
 }
 
+protocol KanjiDetailViewControllerDelegate: class {
+    func kanjiDetailViewControllerDidSelectWord(_ selectedWord: String)
+}
 
 class KanjiDetailViewController: UIViewController {
+    weak var delegate: KanjiDetailViewControllerDelegate?
+    
     var selectedKanji: Kanji?{
         didSet{
             guard let selectedKanji = selectedKanji else {
@@ -100,12 +105,14 @@ extension KanjiDetailViewController: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard indexPath.section == 1 else{return}
-        
         if let word = selectedKanji?.examples[indexPath.row].word{
+            delegate?.kanjiDetailViewControllerDidSelectWord(word)
+            /*
             let listVC = KanjiListViewController()
             listVC.shouldOpenDetailsOnCellSelection = false
             listVC.word = word
             navigationController?.pushViewController(listVC, animated: true)
+             */
         }
     }
     
